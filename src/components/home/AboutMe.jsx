@@ -1,5 +1,5 @@
 import React from "react";
-import Pdf from "../../editable-stuff/resume.pdf";
+
 
 import axios from "axios";
 
@@ -19,7 +19,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
     }
   }, [link]);
 
-  const handleRequest = async () => {
+  const handleRequest = async (link) => {
     const instaLink = "https://www.instagram.com/";
     const instaQuery = "/?__a=1";
     try {
